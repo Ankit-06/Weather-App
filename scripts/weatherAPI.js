@@ -1,4 +1,4 @@
-const APIKey = "BK3Pjo9cAYbgFUpXbDnlMGvO5PSSu788";
+const APIKey = "tAlVIDURF4kCAC0VgMG6U3FaGkIzBK5S";
 
 //getting weather details
 const getWeather = async(id)=>{

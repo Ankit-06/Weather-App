@@ -39,13 +39,12 @@ form.addEventListener("submit", (event) => {
   getInfo(cityName)
     .then((data) => displayWeatherInfo(data))
     .catch((error) => {
-      img.setAttribute(
-        "src",
-        "https://images.unsplash.com/photo-1623018035782-b269248df916?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80"
-      );
+      console.log(error.status);
+      img.style.display = "none";
       body.style.backgroundColor = "crimson";
       let html = `
-        <h1>Location Not Found!</h5>
+      <strong style="font-size:80px">404!</strong>
+        <h1 style="font-size:70px">Location Not Found.</h5>
         <strong> Try some another location!<strong>
       `;
       display.innerHTML = html;
