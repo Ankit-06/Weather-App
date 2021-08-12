@@ -1,4 +1,4 @@
-const APIKey = "fksfrOOC2NQOxxXbjRlL2fX2DIGnU9w6";
+const APIKey = "aS2xCH2jFJEMadTWXp2ZkaQg0Rp5HWYg";
 
 //getting weather details
 const getWeather = async(id)=>{
@@ -23,6 +23,5 @@ const getCity = async(cityName)=>{
     const response = await fetch(base+query);
     const data = await response.json();
     
-    console.log(data);
     return data[0];
 };
